@@ -4,6 +4,7 @@ import java.util.Collections;
 public class Deck {
     private Stack<Card> cards;
 
+    // Using an Array of string for both suits and ranks.
     public Deck () {
         cards = new Stack<>();
         String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
@@ -17,6 +18,7 @@ public class Deck {
     shuffle();
     }
 
+    // Getters for if the Deck isEmpty, shuffle, and dealing.
     public boolean isEmpty() {
         return cards.isEmpty();
     }
